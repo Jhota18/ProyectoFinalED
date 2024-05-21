@@ -1,3 +1,4 @@
+
 public class TABLETA_GRAFICA {
 
     private String serial;   
