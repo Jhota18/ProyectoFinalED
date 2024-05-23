@@ -8,8 +8,12 @@ public class Principal{
         Scanner sc = new Scanner(System.in);
         LinkedList<TABLETA_GRAFICA> lista_tableta = new LinkedList<>();
         LinkedList<COMPUTADOR_PORTATIL> lista_computador = new LinkedList<>();
+        LinkedList<ESTUDIANTE_DISENO> lista_diseño = new LinkedList<>();
+        LinkedList<ESTUDIANTE_INGENIERIA> lista_Ingenieria = new LinkedList<>();
         validar_entrada val = new validar_entrada();
+        Exportacion exp = new Exportacion();
         LLAMADA_TC tc = new LLAMADA_TC();
+        llamada_ID id = new llamada_ID();
         menu me = new menu();
 
         int A = 0;   ///variable donde se va almacenar la respuesta del menu crear objeto
@@ -32,16 +36,18 @@ public class Principal{
 
             switch (A) {
                 case 1:
-                    
+                    lista_Ingenieria = id.ingeniero(lista_Ingenieria);
                     break;
                 case 2:
-                    
+                    lista_diseño = id.diseño(lista_diseño);
                     break;
                 case 3:
                     lista_computador = tc.computador(lista_computador);
+                    exp.exportarComputador(lista_computador);
                     break;
                 case 4:
                     lista_tableta = tc.tableta(lista_tableta);
+                    exp.exportarTableta(lista_tableta);
                     break;
                 case 5:
                     

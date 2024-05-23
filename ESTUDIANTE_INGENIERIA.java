@@ -62,12 +62,7 @@ public class ESTUDIANTE_INGENIERIA {
     }
 
     public void setTelefono(String telefono) {
-        if (telefono != null && telefono.matches("[a-zA-Z0-9]+")) {
-            this.telefono = telefono;
-        }else {
-            throw new IllegalArgumentException("El telefono no puede contener caracteres especiales");
-        }
-        
+        this.telefono = telefono; 
     }
 
     public int getNumSemestre() {

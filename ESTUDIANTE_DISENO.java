@@ -61,10 +61,10 @@ public class ESTUDIANTE_DISENO {
     }
 
     public void setTelefono(String telefono) {
-        if (telefono != null && telefono.matches("[a-zA-Z0-9]+")) {
+        if (telefono != null && telefono.matches("[0-9]+")) {
             this.telefono = telefono;
         }else {
-            throw new IllegalArgumentException("El telefono no puede contener caracteres especiales");
+            throw new IllegalArgumentException("El telefono solo puede tenr numeros");
         }
     }
 
