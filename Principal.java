@@ -15,6 +15,7 @@ public class Principal{
         LLAMADA_TC tc = new LLAMADA_TC();
         llamada_ID id = new llamada_ID();
         menu me = new menu();
+        importar imp= new importar();
 
         int A = 0;   ///variable donde se va almacenar la respuesta del menu crear objeto
         
@@ -50,7 +51,11 @@ public class Principal{
                     exp.exportarTableta(lista_tableta);
                     break;
                 case 5:
-                    
+                    String filePath=imp.agregarArchivo();
+                    lista_diseño=imp.importarEstudiante(filePath);
+                    for (ESTUDIANTE_DISENO estudiante_DISENO : lista_diseño) {
+                        System.out.println(estudiante_DISENO);
+                    }
                     break;
                 case 6:
                     me.MenuPrincipal();

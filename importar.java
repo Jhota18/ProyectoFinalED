@@ -1,9 +1,13 @@
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.LinkedList;
+import javax.swing.JFileChooser;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 public class importar {
+    
     public LinkedList<ESTUDIANTE_DISENO> importarEstudiante(String Archivo) {
         LinkedList<ESTUDIANTE_DISENO> lista = new LinkedList<>();
         try (BufferedReader importar = new BufferedReader(new FileReader(Archivo))) {
@@ -35,6 +39,22 @@ public class importar {
             e.printStackTrace();
         }
         return lista;
+    }
+
+    public String agregarArchivo(){
+        JFileChooser fileChooser = new JFileChooser();
+        // Opcional: establecer un filtro de archivo
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("Archivos de texto", "txt");
+        fileChooser.setFileFilter(filter);
+        String filePath="";
+        int result = fileChooser.showOpenDialog(null);
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = fileChooser.getSelectedFile();
+            filePath = selectedFile.getAbsolutePath();
+        } else {
+            System.out.println("No se seleccionó ningún archivo.");
+        }
+        return filePath;
     }
 }
 
