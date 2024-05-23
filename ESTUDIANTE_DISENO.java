@@ -23,7 +23,12 @@ public class ESTUDIANTE_DISENO {
     }
 
     public void setCedula(String cedula) {
-        this.cedula = cedula;
+        if (cedula != null && cedula.matches("[a-zA-Z0-9]+")) {
+            this.cedula = cedula;
+        }else {
+            throw new IllegalArgumentException("La cedula solo puede contener letras y números.");
+        }  
+    
     }
 
     public String getNombre() {
@@ -31,7 +36,12 @@ public class ESTUDIANTE_DISENO {
     }
 
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        if (nombre != null && nombre.matches("[a-zA-Z]+")) {
+            this.nombre = nombre;
+        }else {
+            throw new IllegalArgumentException("El nombre solo puede contener letras.");
+        } 
+    
     }
 
     public String getApellido() {
@@ -39,7 +49,11 @@ public class ESTUDIANTE_DISENO {
     }
 
     public void setApellido(String apellido) {
-        this.apellido = apellido;
+        if (apellido != null && apellido.matches("[a-zA-Z]+")) {
+            this.apellido = apellido;
+        }else {
+            throw new IllegalArgumentException("El apellido solo puede contener letras.");
+        }
     }
 
     public String getTelefono() {
@@ -47,7 +61,11 @@ public class ESTUDIANTE_DISENO {
     }
 
     public void setTelefono(String telefono) {
-        this.telefono = telefono;
+        if (telefono != null && telefono.matches("[0-9]+")) {
+            this.telefono = telefono;
+        }else {
+            throw new IllegalArgumentException("El telefono solo puede tenr numeros");
+        }
     }
 
     public String getModalidad() {
