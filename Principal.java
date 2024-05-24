@@ -15,7 +15,7 @@ public class Principal{
         LLAMADA_TC tc = new LLAMADA_TC();
         llamada_ID id = new llamada_ID();
         menu me = new menu();
-        importar imp= new importar();
+        importar imp=new importar();
 
         int A = 0;   ///variable donde se va almacenar la respuesta del menu crear objeto
         
@@ -38,9 +38,11 @@ public class Principal{
             switch (A) {
                 case 1:
                     lista_Ingenieria = id.ingeniero(lista_Ingenieria);
+                    exp.exportarIngeniero(lista_Ingenieria);
                     break;
                 case 2:
                     lista_diseño = id.diseño(lista_diseño);
+                    exp.exportarDiseño(lista_diseño);
                     break;
                 case 3:
                     lista_computador = tc.computador(lista_computador);
@@ -54,7 +56,7 @@ public class Principal{
                     String filePath=imp.agregarArchivo();
                     lista_diseño=imp.importarEstudiante(filePath);
                     for (ESTUDIANTE_DISENO estudiante_DISENO : lista_diseño) {
-                        System.out.println(estudiante_DISENO);
+                    System.out.println(estudiante_DISENO);
                     }
                     break;
                 case 6:
