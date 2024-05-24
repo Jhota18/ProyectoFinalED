@@ -62,7 +62,11 @@ public class ESTUDIANTE_INGENIERIA {
     }
 
     public void setTelefono(String telefono) {
-        this.telefono = telefono; 
+        if (telefono != null && telefono.matches("[0-9]+")) {
+            this.telefono = telefono;
+        }else {
+            throw new IllegalArgumentException("El telefono solo puede tenr numeros");
+        }
     }
 
     public int getNumSemestre() {
