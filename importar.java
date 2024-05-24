@@ -93,7 +93,39 @@ public class importar {
                         String procesador = importar.readLine().split(":")[1].trim();
                         COMPUTADOR_PORTATIL computador = new COMPUTADOR_PORTATIL(serial, marca, tamaño, precio, sistemaOperativo, procesador);
                         lista.add(computador);
-                        // Leer la línea en blanco entre estudiantes, si existe
+                        
+                        importar.readLine();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return lista;
+    }
+
+    public LinkedList<TABLETA_GRAFICA> importarTableta(String Archivo) {
+        LinkedList<TABLETA_GRAFICA> lista = new LinkedList<>();
+        try (BufferedReader importar = new BufferedReader(new FileReader(Archivo))) {
+            String Linea;
+            while ((Linea = importar.readLine()) != null) {
+                String[] Lineas = Linea.split(":");
+                if (Lineas.length < 2) continue;  // Salta líneas mal formateadas
+                String Atributo = Lineas[0].toLowerCase().trim();
+                String valor = Lineas[1].trim();
+                switch (Atributo) {
+                    case "serial":
+                        String serial = valor;
+                        String marca = importar.readLine().split(":")[1].trim();
+                        float tamaño = Float.parseFloat(importar.readLine().split(":")[1].trim());
+                        float precio = Float.parseFloat(importar.readLine().split(":")[1].trim());
+                        String almacenamiento= importar.readLine().split(":")[1].trim();
+                        float peso = Float.parseFloat(importar.readLine().split(":")[1].trim());
+                        TABLETA_GRAFICA tableta = new TABLETA_GRAFICA(serial, marca, tamaño, precio, almacenamiento, peso);
+                        lista.add(tableta);
+                        
                         importar.readLine();
                         break;
                     default:

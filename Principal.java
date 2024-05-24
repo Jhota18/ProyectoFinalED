@@ -15,9 +15,11 @@ public class Principal{
         LLAMADA_TC tc = new LLAMADA_TC();
         llamada_ID id = new llamada_ID();
         menu me = new menu();
+        Principal prin= new Principal();
         importar imp=new importar();
 
         int A = 0;   ///variable donde se va almacenar la respuesta del menu crear objeto
+        int B=0;
         
         do{
             System.out.println();
@@ -29,28 +31,25 @@ public class Principal{
             System.out.println("* 3. Crear computador portatil                     *");
             System.out.println("* 4. Crear tableta digital                         *");
             System.out.println("* 5. Importar lista                                *");
-            System.out.println("* 6. Siguiente menu                                *");
-            System.out.println("* 7. Salir del programa                            *");
+            System.out.println("* 6. Exportar lista                                *");
+            System.out.println("* 7. Siguiente menu                                *");
+            System.out.println("* 8. Salir del programa                            *");
             System.out.println("****************************************************");
             
-            A = val.obtenerOpcionValida(sc, 1, 7);
+            A = val.obtenerOpcionValida(sc, 1, 8);
 
             switch (A) {
                 case 1:
                     lista_Ingenieria = id.ingeniero(lista_Ingenieria);
-                    exp.exportarIngeniero(lista_Ingenieria);
                     break;
                 case 2:
                     lista_diseño = id.diseño(lista_diseño);
-                    exp.exportarDiseño(lista_diseño);
                     break;
                 case 3:
                     lista_computador = tc.computador(lista_computador);
-                    exp.exportarComputador(lista_computador);
                     break;
                 case 4:
                     lista_tableta = tc.tableta(lista_tableta);
-                    exp.exportarTableta(lista_tableta);
                     break;
                 case 5:
                     String filePath=imp.agregarArchivo();
@@ -60,14 +59,49 @@ public class Principal{
                     }
                     break;
                 case 6:
-                    me.MenuPrincipal();
+                    System.out.println();
+                    System.out.println("****************************************************");
+                    System.out.println("*          Escoge la lista a exportar         *");
+                    System.out.println("****************************************************");
+                    System.out.println("* 1. Estudiantes de ingenieria                     *");
+                    System.out.println("* 2. Estudiantes de diseño                         *");
+                    System.out.println("* 3. Computadores portatiles                       *");
+                    System.out.println("* 4. Tabletas digitales                            *");
+                    System.out.println("* 5. Inventario                                    *");
+                    System.out.println("* 6. Regresar al menu anterior                     *");
+                    System.out.println("****************************************************");
+                    B = val.obtenerOpcionValida(sc, 1, 7);
+                    switch (B) {
+                        case 1:
+                            exp.exportarIngeniero(lista_Ingenieria);
+                            break;
+                        case 2:
+                            exp.exportarDiseño(lista_diseño);
+                            break;
+                        case 3:
+                            exp.exportarComputador(lista_computador);
+                            break;
+                        case 4:
+                            exp.exportarTableta(lista_tableta);
+                            break;
+                        case 5:
+
+                            break;
+                        case 6:
+                            A=0;
+                            break;               
+                        
+                    }
                     break;
                 case 7:
+                    me.MenuPrincipal();
+                    break;
+                case 8:
                     System.out.println();
                     System.out.println("Saliendo...........");
-                    break;
+                    break;    
             }
-        }while(A != 7);
+        }while(A != 8);
         
         sc.close();
          
