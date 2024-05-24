@@ -63,6 +63,7 @@ public class Principal{
                 case 7:
                     System.out.println();
                     System.out.println("Saliendo...........");
+                    System.out.println();
                     break;
             }
         }while(A != 7);
