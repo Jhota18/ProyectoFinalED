@@ -5,9 +5,9 @@ public class ESTUDIANTE_DISENO {
     private String telefono;    
     private String modalidad; 
     private int cantAsignat; 
-    private int serial;
+    private String serial;
 
-    public ESTUDIANTE_DISENO(String cedula, String nombre, String apellido, String telefono, String modalidad, int cantAsignat, int serial){
+    public ESTUDIANTE_DISENO(String cedula, String nombre, String apellido, String telefono, String modalidad, int cantAsignat, String serial){
         this.cedula=cedula;
         this.nombre=nombre;
         this.apellido=apellido;
@@ -84,11 +84,11 @@ public class ESTUDIANTE_DISENO {
         this.cantAsignat = cantAsignat;
     }
 
-    public int getSerial() {
+    public String getSerial() {
         return serial;
     }
 
-    public void setSerial(int serial) {
+    public void setSerial(String serial) {
         this.serial = serial;
     }
 }

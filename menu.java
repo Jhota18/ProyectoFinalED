@@ -29,7 +29,8 @@ public class menu {
                     op1.Opcion1(lista_computador, lista_Ingenierias ); 
                     break;
                 case 2:
-                    
+                    opcion2 op2 = new opcion2();
+                    op2.Opcion2(lista_tableta, lista_diseño);
                     break;
                 case 3:
                     
