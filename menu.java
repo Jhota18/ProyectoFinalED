@@ -3,7 +3,7 @@ import java.util.LinkedList;
 
 public class menu {
     
-    public void MenuPrincipal(LinkedList<COMPUTADOR_PORTATIL> lista_computador, LinkedList<TABLETA_GRAFICA> lista_tableta){
+    public void MenuPrincipal(LinkedList<COMPUTADOR_PORTATIL> lista_computador, LinkedList<TABLETA_GRAFICA> lista_tableta, LinkedList<ESTUDIANTE_INGENIERIA> lista_Ingenierias, LinkedList<ESTUDIANTE_DISENO> lista_diseño){
 
         Scanner sc = new Scanner(System.in);
         validar_entrada val = new validar_entrada();
@@ -26,7 +26,7 @@ public class menu {
             switch (opcion) {
                 case 1:                       
                     opcion1 op1 = new opcion1(); 
-                    op1.Opcion1(lista_computador); 
+                    op1.Opcion1(lista_computador, lista_Ingenierias ); 
                     break;
                 case 2:
                     
