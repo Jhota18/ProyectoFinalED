@@ -33,7 +33,9 @@ public class opcion1 {
                     aci.registrar(lista_computador,lista_Ingenierias);
                     break;
                 case 2:
-                    aci.modificar();
+                    System.out.println("Por favor ingrese su cedula:");
+                    String cedula=sc.nextLine();
+                    aci.modificar(cedula,lista_Ingenierias);
                     break;
                 case 3:
                     aci.devolucion();
