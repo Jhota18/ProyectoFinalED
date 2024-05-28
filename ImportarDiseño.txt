@@ -4,7 +4,7 @@ Apellido : galviz
 Telefono : 30012343421
 Modalidad de estudio : Presencial
 Cantidad de asignaturas : 5
-Serial : 123211
+Serial : 
 
 Cedula : 87651200
 Nombre : martin
@@ -12,7 +12,7 @@ Apellido : suarez
 Telefono : 2432132
 Modalidad de estudio : Virtual
 Cantidad de asignaturas : 2
-Serial : 123009
+Serial : 
 
 Cedula : 1039451095
 Nombre : Nora
@@ -20,7 +20,7 @@ Apellido : Grajales
 Telefono : 2227654
 Modalidad de estudio : Presencial
 Cantidad de asignaturas : 6
-Serial : 112233
+Serial : 
 
 Cedula : 534571
 Nombre : Laura
@@ -28,7 +28,7 @@ Apellido : Alnago
 Telefono : 3128929087
 Modalidad de estudio : Virtual
 Cantidad de asignaturas : 3
-Serial : 8778887
+Serial : 
 
 Cedula : 1712131415
 Nombre : Sofia
@@ -36,7 +36,7 @@ Apellido : Uribe
 Telefono : 34054761211
 Modalidad de estudio : Presencial
 Cantidad de asignaturas : 10
-Serial : 009890
+Serial :
 
 Cedula : 5152535455
 Nombre : Cristiano
@@ -44,5 +44,5 @@ Apellido : Ronaldo
 Telefono : 00001
 Modalidad de estudio : Virtual
 Cantidad de asignaturas : 3
-Serial : 00021
+Serial :
 
