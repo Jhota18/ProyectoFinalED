@@ -1,7 +1,0 @@
-Serial : 2331d
-Marca : ds
-Tamaño : 2.0 pulgadas
-Precio : 323.0 pesos colombianos
-Almacenamiento : 512 GB
-Peso : 2.0 kilogramos
-
