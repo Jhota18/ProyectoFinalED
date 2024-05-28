@@ -60,39 +60,36 @@ public class Principal{
                     System.out.println("* 2. Estudiantes de diseño                         *");
                     System.out.println("* 3. Computadores portatiles                       *");
                     System.out.println("* 4. Tabletas digitales                            *");
-                    System.out.println("* 5. Inventario                                    *");
-                    System.out.println("* 6. Regresar al menu anterior                     *");
+                    System.out.println("* 5. Regresar al menu anterior                     *");
                     System.out.println("****************************************************");
                     B = val.obtenerOpcionValida(sc, 1, 6);
                     switch (B) {
                         case 1:
                             filePath=imp.agregarArchivo();
-                            lista_Ingenieria=imp.importarEstudianteIn(filePath);
+                            lista_Ingenieria=imp.importarEstudianteIn(filePath, lista_Ingenieria);
+                            System.out.println("Estudiantes importados de manera exitosa");
                             break;
                         case 2:
                             filePath=imp.agregarArchivo();
-                            lista_diseño=imp.importarEstudiante(filePath);
+                            lista_diseño=imp.importarEstudiante(filePath, lista_diseño);
+                            System.out.println("Estudiantes importados de manera exitosa");
                             break;
                         case 3:
                             filePath=imp.agregarArchivo();
-                            lista_computador=imp.importarComputador(filePath);
+                            lista_computador=imp.importarComputador(filePath, lista_computador);
                             break;
                         case 4:
                             filePath=imp.agregarArchivo();
-                            lista_tableta=imp.importarTableta(filePath);
+                            lista_tableta=imp.importarTableta(filePath, lista_tableta);
+                            System.out.println("Tabletas importadas de manera exitosa");
                             break;
                         case 5:
-                            System.out.println("Pendiente por realizar");
-                            break;
-                        case 6:
                             A=0;
-                            break;               
+                            break;             
                         
                     }
                     
-                    for (ESTUDIANTE_DISENO estudiante_DISENO : lista_diseño) {
-                    System.out.println(estudiante_DISENO);
-                    }
+                    
                     break;
                 case 6:
                     System.out.println();
@@ -110,9 +107,11 @@ public class Principal{
                     switch (B) {
                         case 1:
                             exp.exportarIngeniero(lista_Ingenieria);
+                            System.out.println("Estudiantes exportados de manera exitosa");
                             break;
                         case 2:
                             exp.exportarDiseño(lista_diseño);
+                            System.out.println("Estudiantes exportados de manera exitosa");
                             break;
                         case 3:
                             exp.exportarComputador(lista_computador);

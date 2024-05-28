@@ -1,34 +1,34 @@
 Serial : 1234f
 Marca : asus
-Tamaño : 12.0 pulgadas
-Precio : 120000.0 pesos colombianos
+Tamaño : 12.0
+Precio : 120000.0
 Sistema operativo : Windows 7
 Procesador : AMD Ryzen
 
 Serial : 3333A
 Marca : hp
-Tamaño : 21.0 pulgadas
-Precio : 300000.0 pesos colombianos
+Tamaño : 21.0
+Precio : 300000.0
 Sistema operativo : Windows 10
 Procesador : Intel® Core™ i5
 
 Serial : 000091
 Marca : iphohne
-Tamaño : 21.0 pulgadas
-Precio : 1000000.0 pesos colombianos
+Tamaño : 21.0
+Precio : 1000000.0
 Sistema operativo : Windows 11
 Procesador : Intel® Core™ i5
 
 Serial : 200123
 Marca : Samsumg
-Tamaño : 9.0 pulgadas
-Precio : 130000.0 pesos colombianos
+Tamaño : 9.0
+Precio : 130000.0
 Sistema operativo : Windows 7
 Procesador : AMD Ryzen
 
-Serial : 3333A
+Serial : 3333B
 Marca : LG
-Tamaño : 11.0 pulgadas
-Precio : 432000.0 pesos colombianos
+Tamaño : 11.0
+Precio : 432000.0
 Sistema operativo : Windows 11
 Procesador : Intel® Core™ i5

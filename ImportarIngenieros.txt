@@ -4,7 +4,7 @@ Apellido : Garro
 Telefono : 30012340099
 Numero de semestre : 10
 Promedio acumulado : 5.0
-Serial : 12345
+Serial :
 
 Cedula : 212121212121
 Nombre : Delio
@@ -12,7 +12,7 @@ Apellido : Ospina
 Telefono : 3004902722
 Numero de semestre : 9
 Promedio acumulado : 4.0
-Serial : 33333A
+Serial :
 
 Cedula : 987654321
 Nombre : Carlos
@@ -20,7 +20,7 @@ Apellido : Cepeda
 Telefono : 3118900012
 Numero de semestre : 2
 Promedio acumulado : 2.0
-Serial : pfw111
+Serial :
 
 Cedula : 33333333333333
 Nombre : Camilo
@@ -28,7 +28,7 @@ Apellido : Peña
 Telefono : 3195658900
 Numero de semestre : 7
 Promedio acumulado : 1.0
-Serial : 222sa
+Serial :
 
 Cedula : 4444444444
 Nombre : Johan
@@ -36,7 +36,7 @@ Apellido : Perez
 Telefono : 4500011
 Numero de semestre : 5
 Promedio acumulado : 3.0
-Serial : FFFF21
+Serial :
 
 Cedula : 29999999999999
 Nombre : Danilo
@@ -44,4 +44,4 @@ Apellido : Pineda
 Telefono : 31230044
 Numero de semestre : 4
 Promedio acumulado : 2.0
-Serial : 4343434444ARS
+Serial :
