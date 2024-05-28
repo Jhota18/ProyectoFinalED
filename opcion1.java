@@ -30,13 +30,13 @@ public class opcion1 {
 
             switch (seleccion) {
                 case 1:
-                    aci.registrar(lista_computador);
+                    aci.registrar(lista_computador,lista_Ingenierias);
                     break;
                 case 2:
                     aci.modificar();
                     break;
                 case 3:
-                    aci.devolucion();
+                    aci.devolucion(lista_Ingenierias, lista_computador);
                     break;
                 case 4:
                     aci.buscar(lista_computador,lista_Ingenierias);
