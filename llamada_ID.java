@@ -102,7 +102,7 @@ public class llamada_ID {
         System.out.println("Registra los atributos del estudiante de diseño:");
         System.out.println();
         do{
-            ESTUDIANTE_DISENO dis = new ESTUDIANTE_DISENO(null, null, null, null, null, continuar, indexx);
+            ESTUDIANTE_DISENO dis = new ESTUDIANTE_DISENO(null, null, null, null, null, indexx, null);
             System.out.println();
             System.out.println("Estudiante de diseño: #"+ indexx++);
             System.out.println();
@@ -181,7 +181,8 @@ public class llamada_ID {
                 System.out.println("Entrada inválida. Intentalo de nuevo, el seiral solo recibe numeros.");
                 sc.next();
             }
-            dis.setSerial(sc.nextInt());
+            dis.setSerial(sc.next());
+            // dis.setSerial(sc.nextInt());
 
             lista_diseño.add(dis);
 
