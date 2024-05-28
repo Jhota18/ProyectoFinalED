@@ -61,6 +61,68 @@ public class Exportacion {
         } catch (Exception e) {
             System.err.println("Error al exportar los datos: " + e.getMessage());
         }
+    }  
+    
+    
+    public void exportarIngeniero(LinkedList<ESTUDIANTE_INGENIERIA> lista_Ingenierias) {
+        try {
+            System.out.println();
+            System.out.println("Iniciando exportación de lista de estudiantes de ingenieria..........");
+            File archivo = new File("Ingenieros.txt");
+            FileWriter exportar = new FileWriter(archivo, false); // false to overwrite the file
+
+            if (lista_Ingenierias.isEmpty()) {
+                System.out.println("La lista de ingenieros está vacía.");
+            }
+
+            for (ESTUDIANTE_INGENIERIA ing : lista_Ingenierias) {
+                exportar.write("Cedula" + " : " + ing.getCedula() + "\n");
+                exportar.write("Nombre" + " : " + ing.getNombre() + "\n");
+                exportar.write("Apellido" + " : " + ing.getApellido() + "\n");
+                exportar.write("Telefono" + " : " + ing.getTelefono() + "\n");
+                exportar.write("Numero de semestre" + " : " + ing.getNumSemestre() + "\n");
+                exportar.write("Promedio acumulado" + " : " + ing.getPromAcum() + "\n");
+                exportar.write("Serial" + " : " + ing.getSerial() + "\n");
+                exportar.write("\n");
+            }
+            exportar.close();
+            System.out.println("Datos exportados correctamente!!!");
+        } catch (IOException e) {
+            System.err.println("Error de IO al exportar los datos: " + e.getMessage());
+        } catch (Exception e) {
+            System.err.println("Error al exportar los datos: " + e.getMessage());
+        }
     }   
+
+
+    public void exportarDiseño(LinkedList<ESTUDIANTE_DISENO> lista_Disenos) {
+        try {
+            System.out.println();
+            System.out.println("Iniciando exportación de lista de estudiantes de diseño..........");
+            File archivo = new File("Ingenieros.txt");
+            FileWriter exportar = new FileWriter(archivo, false); // false to overwrite the file
+
+            if (lista_Disenos.isEmpty()) {
+                System.out.println("La lista de estudiantes de diseño está vacía.");
+            }
+
+            for (ESTUDIANTE_DISENO dis : lista_Disenos) {
+                exportar.write("Cedula" + " : " + dis.getCedula() + "\n");
+                exportar.write("Nombre" + " : " + dis.getNombre() + "\n");
+                exportar.write("Apellido" + " : " + dis.getApellido() + "\n");
+                exportar.write("Telefono" + " : " + dis.getTelefono() + "\n");
+                exportar.write("Modalidad de estudio" + " : " + dis.getModalidad() + "\n");
+                exportar.write("Cantidad de asignaturas" + " : " + dis.getCantAsignat() + "\n");
+                exportar.write("Serial" + " : " + dis.getSerial() + "\n");
+                exportar.write("\n");
+            }
+            exportar.close();
+            System.out.println("Datos exportados correctamente!!!");
+        } catch (IOException e) {
+            System.err.println("Error de IO al exportar los datos: " + e.getMessage());
+        } catch (Exception e) {
+            System.err.println("Error al exportar los datos: " + e.getMessage());
+        }
+    }
 }
 

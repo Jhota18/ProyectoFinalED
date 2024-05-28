@@ -47,10 +47,11 @@ public class llamada_ID {
             }
 
             System.out.print("Ingresa el telefono: ");
-            while (!sc.hasNextInt()) {
-                System.out.println("Entrada inválida. Intentalo de nuevo,  solo debes ingresar numeros.");
-                sc.next();
-            }
+            
+            // while (!sc.hasNextInt()) {
+            //     System.out.println("Entrada inválida. Intentalo de nuevo,  solo debes ingresar numeros.");
+            //     sc.next();
+            // }
             ing.setTelefono(sc.next());
 
             System.out.println("Ingresa el numero de semestre actual cursado: ");

@@ -26,7 +26,7 @@ public class ESTUDIANTE_DISENO {
         if (cedula != null && cedula.matches("[a-zA-Z0-9]+")) {
             this.cedula = cedula;
         }else {
-            throw new IllegalArgumentException("La cedula solo puede contener letras y números.");
+            throw new IllegalArgumentException("La cedula solo  números.");
         }  
     
     }
