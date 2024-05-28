@@ -62,7 +62,7 @@ public class Principal{
                     System.out.println("* 4. Tabletas digitales                            *");
                     System.out.println("* 5. Regresar al menu anterior                     *");
                     System.out.println("****************************************************");
-                    B = val.obtenerOpcionValida(sc, 1, 6);
+                    B = val.obtenerOpcionValida(sc, 1, 5);
                     switch (B) {
                         case 1:
                             filePath=imp.agregarArchivo();
