@@ -36,12 +36,12 @@ public class importar {
                         String telefono = importar.readLine().split(":")[1].trim();
                         String modalidad = importar.readLine().split(":")[1].trim();
                         int cantAsignat = Integer.parseInt(importar.readLine().split(":")[1].trim());
-                        int serial=0;
+                        String serial="";
                         String lineaSerial = importar.readLine();
                         if (lineaSerial != null && lineaSerial.split(":").length > 1) {
                             String valorSerial = lineaSerial.split(":")[1].trim();
                             if (!valorSerial.isEmpty()) {
-                                serial = Integer.parseInt(valorSerial);
+                                serial = valorSerial;
                             }
                         }
                         // int serial = Integer.parseInt(importar.readLine().split(":")[1].trim());
