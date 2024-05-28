@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class opcion1 {
 
-    public void Opcion1(LinkedList<COMPUTADOR_PORTATIL> lista_computador){
+    public void Opcion1(LinkedList<COMPUTADOR_PORTATIL> lista_computador, LinkedList<ESTUDIANTE_INGENIERIA> lista_Ingenierias){
 
         acciones_ingeniero aci = new acciones_ingeniero();
         validar_entrada val = new validar_entrada();
@@ -33,13 +33,13 @@ public class opcion1 {
                     aci.registrar(lista_computador);
                     break;
                 case 2:
-                    
+                    aci.modificar();
                     break;
                 case 3:
-                    
+                    aci.devolucion();
                     break;
                 case 4:
-                    
+                    aci.buscar(lista_computador,lista_Ingenierias);
                     break;
                 case 5:
                     System.out.println();
