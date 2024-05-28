@@ -14,11 +14,17 @@ public class acciones_ingeniero {
 
         int iterador = 1;
         String serialElegido = "";
+        System.out.println();
         System.out.println("Despues de ver los equipos disponibles escoge uno por medio del serial:");
+        System.out.println();
 
         for (COMPUTADOR_PORTATIL computador : Cdisponibles) {
             System.out.println("Computador # " + iterador++);
-            System.out.println(computador);
+            System.out.println();
+            System.out.print("Serial: " + computador.getSerial() + "\n");
+            System.out.print("Marca: " + computador.getMarca() + "\n");
+            System.out.print("Sistema operativo: " + computador.getSistemaOperativo() + "\n");
+            System.out.print("Procesador: " + computador.getProcesador() + "\n");
             System.out.println();
         }
         
@@ -33,6 +39,8 @@ public class acciones_ingeniero {
         } else {
             System.out.println("El computador con serial " + serialElegido + " no se encontró en la lista de disponibles.");
         }
+
+        System.out.println("elegiste:  " + serialElegido);
     }
     
     public void modificar(){
@@ -54,19 +62,5 @@ public class acciones_ingeniero {
             }
         }
         return null;
-    }
-
-    public void mostrarDisponibles() {
-        System.out.println("Computadores disponibles:");
-        for (COMPUTADOR_PORTATIL computador : Cdisponibles) {
-            System.out.println(computador);
-        }
-    }
-
-    public void mostrarPrestados() {
-        System.out.println("Computadores prestados:");
-        for (COMPUTADOR_PORTATIL computador : Cprestados) {
-            System.out.println(computador);
-        }
     }
 }

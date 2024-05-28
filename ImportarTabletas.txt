@@ -1,0 +1,34 @@
+Serial : 100G
+Marca : huawai
+Tamaño : 21.0 pulgadas
+Precio : 333000.0 pesos colombianos
+Almacenamiento : 256 GB
+Peso : 12.0 kilogramos
+
+Serial : 101G
+Marca : Game
+Tamaño : 3.0 pulgadas
+Precio : 500000.0 pesos colombianos
+Almacenamiento : 512 GB
+Peso : 3.0 kilogramos
+
+Serial : 102G
+Marca : Over
+Tamaño : 7.0 pulgadas
+Precio : 333000.0 pesos colombianos
+Almacenamiento : 256 GB
+Peso : 12.0 kilogramos
+
+Serial : 103G
+Marca : Nike
+Tamaño : 2.0 pulgadas
+Precio : 500000.0 pesos colombianos
+Almacenamiento : 512 GB
+Peso : 3.0 kilogramos
+
+Serial : 104G
+Marca : Xiami
+Tamaño : 10.0 pulgadas
+Precio : 521000.0 pesos colombianos
+Almacenamiento : 256 GB
+Peso : 1.0 kilogramos
