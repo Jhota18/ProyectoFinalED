@@ -33,6 +33,7 @@ public class opcion2 {
                     acd.registrar(lista_tableta,lista_diseño);
                     break;
                 case 2:
+                    sc.nextLine();
                     System.out.println("Por favor ingrese su cedula:");
                     String cedula=sc.nextLine();
                     acd.modificar(cedula,lista_diseño);
