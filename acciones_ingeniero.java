@@ -8,10 +8,10 @@ public class acciones_ingeniero {
 
     public void registrar(LinkedList<COMPUTADOR_PORTATIL> lista_computador) {
         Scanner sc = new Scanner(System.in);
-        
+
         Cdisponibles.clear();
         Cdisponibles.addAll(lista_computador);
-
+        
         int iterador = 1;
         String serialElegido = "";
         System.out.println();
@@ -34,6 +34,7 @@ public class acciones_ingeniero {
         COMPUTADOR_PORTATIL computadorElegido = VerificarExistencia(serialElegido, Cdisponibles);
         if (computadorElegido != null) {
             Cdisponibles.remove(computadorElegido);
+            lista_computador.remove(computadorElegido);
             Cprestados.add(computadorElegido);
             System.out.println("El computador con serial " + serialElegido + " ha sido prestado.");
         } else {
