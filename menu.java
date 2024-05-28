@@ -1,8 +1,9 @@
 import java.util.Scanner;
+import java.util.LinkedList;
 
 public class menu {
     
-    public void MenuPrincipal(){
+    public void MenuPrincipal(LinkedList<COMPUTADOR_PORTATIL> lista_computador, LinkedList<TABLETA_GRAFICA> lista_tableta){
 
         Scanner sc = new Scanner(System.in);
         validar_entrada val = new validar_entrada();
@@ -25,7 +26,7 @@ public class menu {
             switch (opcion) {
                 case 1:                       
                     opcion1 op1 = new opcion1(); 
-                    op1.Opcion1(); 
+                    op1.Opcion1(lista_computador); 
                     break;
                 case 2:
                     

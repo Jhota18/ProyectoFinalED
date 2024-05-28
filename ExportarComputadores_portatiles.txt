@@ -1,0 +1,7 @@
+Serial : 121dd
+Marca : asdf
+Tamaño : 23.0 pulgadas
+Precio : 23.0 pesos colombianos
+Sistema operativo : Windows 10
+Procesador : Intel® Core™ i5
+

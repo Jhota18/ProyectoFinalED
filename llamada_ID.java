@@ -47,12 +47,14 @@ public class llamada_ID {
             }
 
             System.out.print("Ingresa el telefono: ");
-            
-            // while (!sc.hasNextInt()) {
-            //     System.out.println("Entrada inválida. Intentalo de nuevo,  solo debes ingresar numeros.");
-            //     sc.next();
-            // }
-            ing.setTelefono(sc.next());
+            while (true) {
+                try {
+                    ing.setTelefono(sc.next());
+                    break;
+                } catch (IllegalArgumentException e) {
+                    System.out.println(e.getMessage() + " Por favor, inténtalo de nuevo.");
+                }
+            }
 
             System.out.println("Ingresa el numero de semestre actual cursado: ");
             while (!sc.hasNextInt()) {
@@ -135,7 +137,7 @@ public class llamada_ID {
             }
 
             System.out.print("Ingresa el telefono: ");
-            while (!sc.hasNextInt()) {
+            while (!sc.hasNextFloat()) {
                 System.out.println("Entrada inválida. Intentalo de nuevo,  solo debes ingresar numeros.");
                 sc.next();
             }
