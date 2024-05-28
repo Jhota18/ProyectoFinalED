@@ -129,7 +129,7 @@ public class Principal{
                     }
                     break;
                 case 7:
-                    me.MenuPrincipal(lista_computador, lista_tableta);
+                    me.MenuPrincipal(lista_computador, lista_tableta, lista_Ingenieria, lista_diseño);
                     break;
                 case 8:
                     System.out.println();
