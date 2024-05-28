@@ -64,7 +64,7 @@ public class ESTUDIANTE_DISENO {
         if (telefono != null && telefono.matches("[0-9]+")) {
             this.telefono = telefono;
         }else {
-            throw new IllegalArgumentException("El telefono solo puede tenr numeros");
+            throw new IllegalArgumentException("El telefono solo puede tener numeros");
         }
     }
 
