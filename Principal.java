@@ -135,6 +135,7 @@ public class Principal{
                 case 8:
                     System.out.println();
                     System.out.println("Saliendo...........");
+                    System.out.println();
                     break;    
             }
         }while(A != 8);
