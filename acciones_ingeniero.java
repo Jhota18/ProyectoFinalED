@@ -59,8 +59,44 @@ public class acciones_ingeniero {
         }
     }
 
-    public void devolucion(){
-        
+    public void devolucion(LinkedList<ESTUDIANTE_INGENIERIA> lista_Ingenierias, LinkedList<COMPUTADOR_PORTATIL> lista_computador){
+        System.out.println();
+        System.out.print("Vas a devolver el equipo por 1. cedula o por 2. serial :  ");
+        int opcion = 0;
+        opcion = val.obtenerOpcionValida(sc, 1, 2);
+        sc.nextLine();
+        switch (opcion) {
+            case 1:
+                System.out.print("Ingresa el numero de cedula:  ");
+                String cedula = sc.nextLine();
+                String serialB = "";
+                ESTUDIANTE_INGENIERIA est = VerificarCedula(cedula, lista_Ingenierias);
+                if (est != null) {
+                    System.out.println("El estudiante con cedula " + cedula + " ha sido encontrado.");
+                    serialB = est.getSerial();
+                    COMPUTADOR_PORTATIL com = VerificarComputador(serialB, lista_computador);
+                    if(com != null){
+                        System.out.println("El computador no a sido prestado");
+                    }else{
+                        Cprestados.remove(serialB);
+                        lista_computador.add(com);
+                    }
+                } else {
+                    System.out.println("El estudiante con cedula " + cedula + " no se encuentra.");
+                }
+                break;
+            case 2:
+                System.out.print("Ingresa el serial:  ");
+                String serialA = sc.nextLine();
+                COMPUTADOR_PORTATIL com = VerificarComputador(serialA, lista_computador);
+                if(com != null){
+                    System.out.println("El computador no a sido prestado");
+                }else{
+                    Cprestados.remove(serialA);
+                    lista_computador.add(com);
+                }
+                break;
+        }
     }
 
     public void buscar(LinkedList<COMPUTADOR_PORTATIL> lista_computador, LinkedList<ESTUDIANTE_INGENIERIA> lista_Ingenierias){
@@ -100,9 +136,6 @@ public class acciones_ingeniero {
                 }
                 break;
         }
-        
-        
-        
     }
 
     public COMPUTADOR_PORTATIL VerificarExistencia(String serial, LinkedList<COMPUTADOR_PORTATIL> Cdisponibles) {

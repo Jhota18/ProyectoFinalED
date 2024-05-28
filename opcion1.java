@@ -38,7 +38,7 @@ public class opcion1 {
                     aci.modificar(cedula,lista_Ingenierias);
                     break;
                 case 3:
-                    aci.devolucion();
+                    aci.devolucion(lista_Ingenierias, lista_computador);
                     break;
                 case 4:
                     aci.buscar(lista_computador,lista_Ingenierias);
