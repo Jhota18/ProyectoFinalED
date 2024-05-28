@@ -50,8 +50,13 @@ public class acciones_ingeniero {
         System.out.println("elegiste:  " + serialElegido);
     }
     
-    public void modificar(){
-        
+    public void modificar(String cedula, LinkedList<ESTUDIANTE_INGENIERIA> estudiante){
+        ESTUDIANTE_INGENIERIA verificarEstudiante= VerificarCedula(cedula,estudiante);
+        System.out.println("Por favor ingrese el nuevo serial:");
+        String serialNuevo= sc.nextLine();
+        if (verificarEstudiante!=null) {
+            verificarEstudiante.setSerial(serialNuevo);
+        }
     }
 
     public void devolucion(LinkedList<ESTUDIANTE_INGENIERIA> lista_Ingenierias, LinkedList<COMPUTADOR_PORTATIL> lista_computador){
