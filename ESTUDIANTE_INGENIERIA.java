@@ -23,10 +23,10 @@ public class ESTUDIANTE_INGENIERIA {
     }
 
     public void setCedula(String cedula) {
-        if (cedula != null && cedula.matches("[a-zA-Z0-9]+")) {
+        if (cedula != null && cedula.matches("[0-9]+")) {
             this.cedula = cedula;
         }else {
-            throw new IllegalArgumentException("La cedula solo puede contener letras y números.");
+            throw new IllegalArgumentException("La cedula solo puede contener números.");
         }   
         
     }
@@ -65,7 +65,7 @@ public class ESTUDIANTE_INGENIERIA {
         if (telefono != null && telefono.matches("[0-9]+")) {
             this.telefono = telefono;
         }else {
-            throw new IllegalArgumentException("El telefono solo puede tenr numeros");
+            throw new IllegalArgumentException("El telefono solo puede tener numeros");
         }
     }
 

@@ -1,0 +1,8 @@
+Cedula : 112222
+Nombre : andrea
+Apellido : esre
+Telefono : 23133121
+Modalidad de estudio : Presencial
+Cantidad de asignaturas : 3
+Serial : 2222
+

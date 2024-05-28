@@ -1,8 +1,9 @@
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class opcion1 {
 
-    public void Opcion1(){
+    public void Opcion1(LinkedList<COMPUTADOR_PORTATIL> lista_computador){
 
         acciones_ingeniero aci = new acciones_ingeniero();
         validar_entrada val = new validar_entrada();
@@ -29,7 +30,7 @@ public class opcion1 {
 
             switch (seleccion) {
                 case 1:
-                    
+                    aci.registrar(lista_computador);
                     break;
                 case 2:
                     
