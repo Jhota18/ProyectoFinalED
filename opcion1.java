@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class opcion1 {
 
-    public void Opcion1(LinkedList<COMPUTADOR_PORTATIL> lista_computador, LinkedList<ESTUDIANTE_INGENIERIA> lista_Ingenierias){
+    public void Opcion1(LinkedList<COMPUTADOR_PORTATIL> lista_computador, LinkedList<ESTUDIANTE_INGENIERIA> lista_Ingenierias, LinkedList<COMPUTADOR_PORTATIL> X){
 
         acciones_ingeniero aci = new acciones_ingeniero();
         validar_entrada val = new validar_entrada();
@@ -30,7 +30,7 @@ public class opcion1 {
 
             switch (seleccion) {
                 case 1:
-                    aci.registrar(lista_computador,lista_Ingenierias);
+                    aci.registrar(lista_computador,lista_Ingenierias, X);
                     break;
                 case 2:
                     sc.nextLine();

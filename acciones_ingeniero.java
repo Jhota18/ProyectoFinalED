@@ -6,9 +6,10 @@ public class acciones_ingeniero {
     private LinkedList<COMPUTADOR_PORTATIL> Cdisponibles = new LinkedList<>();
     private LinkedList<COMPUTADOR_PORTATIL> Cprestados = new LinkedList<>();
     private Scanner sc = new Scanner(System.in);
-    private validar_entrada val = new validar_entrada(); 
+    private validar_entrada val = new validar_entrada();
+    
 
-    public void registrar(LinkedList<COMPUTADOR_PORTATIL> lista_computador, LinkedList<ESTUDIANTE_INGENIERIA> estudiante) {
+    public void registrar(LinkedList<COMPUTADOR_PORTATIL> lista_computador, LinkedList<ESTUDIANTE_INGENIERIA> estudiante, LinkedList<COMPUTADOR_PORTATIL> X) {
 
         Cdisponibles.clear();
         Cdisponibles.addAll(lista_computador);
@@ -48,6 +49,7 @@ public class acciones_ingeniero {
         }
 
         System.out.println("elegiste:  " + serialElegido);
+        X.addAll(Cprestados);
     }
     
     public void modificar(String cedula, LinkedList<ESTUDIANTE_INGENIERIA> estudiante){
