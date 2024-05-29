@@ -10,6 +10,8 @@ public class Principal{
         LinkedList<COMPUTADOR_PORTATIL> lista_computador = new LinkedList<>();
         LinkedList<ESTUDIANTE_DISENO> lista_diseño = new LinkedList<>();
         LinkedList<ESTUDIANTE_INGENIERIA> lista_Ingenieria = new LinkedList<>();
+        LinkedList<COMPUTADOR_PORTATIL> X = new LinkedList<>();
+        LinkedList<TABLETA_GRAFICA> Y = new LinkedList<>();
         validar_entrada val = new validar_entrada();
         Exportacion exp = new Exportacion();
         LLAMADA_TC tc = new LLAMADA_TC();
@@ -94,7 +96,7 @@ public class Principal{
                 case 6:
                     System.out.println();
                     System.out.println("****************************************************");
-                    System.out.println("*          Escoge la lista a exportar         *");
+                    System.out.println("*          Escoge la lista a exportar              *");
                     System.out.println("****************************************************");
                     System.out.println("* 1. Estudiantes de ingenieria                     *");
                     System.out.println("* 2. Estudiantes de diseño                         *");
@@ -120,7 +122,8 @@ public class Principal{
                             exp.exportarTableta(lista_tableta);
                             break;
                         case 5:
-
+                            Inventario inv = new Inventario();
+                            inv.inventario(lista_computador, lista_tableta, X, Y); 
                             break;
                         case 6:
                             A=0;
@@ -129,7 +132,7 @@ public class Principal{
                     }
                     break;
                 case 7:
-                    me.MenuPrincipal(lista_computador, lista_tableta, lista_Ingenieria, lista_diseño);
+                    me.MenuPrincipal(lista_computador, lista_tableta, lista_Ingenieria, lista_diseño, X, Y);
                     break;
                 case 8:
                     System.out.println();

@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class opcion2 {
 
-    public void Opcion2(LinkedList<TABLETA_GRAFICA> lista_tableta, LinkedList<ESTUDIANTE_DISENO> lista_diseño){
+    public void Opcion2(LinkedList<TABLETA_GRAFICA> lista_tableta, LinkedList<ESTUDIANTE_DISENO> lista_diseño, LinkedList<TABLETA_GRAFICA> Y){
 
         acciones_diseño acd = new acciones_diseño();
         validar_entrada val = new validar_entrada();
